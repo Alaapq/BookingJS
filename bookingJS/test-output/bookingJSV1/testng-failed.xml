@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [bookingJSV1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.bookingJS.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="BookingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bookingJS.testCases.TC_HotelTest_002">
+        <methods>
+          <include name="addAddressesCustomer"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.bookingJS.testCases.TC_HotelTest_002 -->
+      <class name="com.bookingJS.testCases.TC_DetailsHotelTest_003">
+        <methods>
+          <include name="setup"/>
+          <include name="detailsHotel"/>
+        </methods>
+      </class> <!-- com.bookingJS.testCases.TC_DetailsHotelTest_003 -->
+      <class name="com.bookingJS.testCases.TC_SearchTest_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.bookingJS.testCases.TC_SearchTest_001 -->
+    </classes>
+  </test> <!-- BookingApp Test(failed) -->
+</suite> <!-- Failed suite [bookingJSV1] -->
